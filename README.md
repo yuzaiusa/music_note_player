@@ -7,4 +7,5 @@ List of exercises:
 2. Play Score: function, string operation, file operation
 3. Play in Realtime: class
 4. Play Harmonies (and Different Sounds): function objects
-5. Visualize Real Insturment Sound: pyaudio stream, numpy/pandas, pyplot
+5. Transpose to a different key: class member function
+Extra: Visualize Real Insturment Sound: pyaudio stream, numpy/pandas, pyplot
