@@ -11,9 +11,9 @@ For example, the first measure of Twinkle Twinkle Little Star in C major can be 
 
 Where each note is followed by its length in beats, and the notes are separated by commas.
 
-Your task is to implement a function `play_score` that takes a string representing the score, a PyAudio stream,
-and a tempo in beats per minute (BPM). The function should parse the score string, convert it into note-length
-pairs, and then use the play_note function from exercise1b to play.
+Your task is to implement a function `play_score` that takes a PyAudio stream, a string representing the score,
+and a tempo in beats per minute (BPM). The function should parse the score string (hint: use the split function),
+convert it into note-length pairs, and then use the play_note function from exercise1b to play.
 
 Remember to start the audio stream before playing any notes and stop it after you finish playing all the notes.
 """
