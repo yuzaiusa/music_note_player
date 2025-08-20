@@ -13,7 +13,7 @@ Then, play this in D major scale.
 
 An example of playing a single note (A4, 440 Hz) for 1 second is provided below.
     stream = start_play(sample_rate=44100)
-    # Play a frequency of 440 Hz (A4) for 1 second at half volume
+    # Play a frequency of 440 Hz (A4) for 1 second at full volume with sample rate of 44100 Hz
     play_frequency(stream, frequency=440.0, duration=1.0, sample_rate=44100, volume=1.0)
     stop_play(stream)
 """
