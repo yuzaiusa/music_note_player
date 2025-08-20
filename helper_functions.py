@@ -19,7 +19,7 @@ def start_play(sample_rate: float = 44100) -> pyaudio.Stream:
                     output=True)
     return stream
 
-def play_frequency(stream: pyaudio.Stream, frequency: float, duration: float, sample_rate: int = 44100, ampitude: float = 1.0):
+def play_frequency(stream: pyaudio.Stream, frequency: float, duration: float, sample_rate: int, ampitude: float):
     """
     Play a sound given a set of parameters
     :param stream: PyAudio stream object
@@ -42,7 +42,7 @@ def stop_play(stream: pyaudio.Stream):
     :param stream: PyAudio stream object
     :return: None
     """
-    p = stream._pyaudio
-    p.terminate()
+    p = stream._parent
     stream.stop_stream()
     stream.close()
+    p.terminate()
