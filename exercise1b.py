@@ -137,4 +137,7 @@ Tips:
     You can run each cell independently and see the result immediately. You can run the same cell multiple times after modifying it
     and see how the result changes. You can always print() the variables to see their values. For more advanced users, you can also
     use a debugger (%debug) to investigate when the code fails.
+
+8. To loop through a list of TWO ITEMS, like the case of note and length, you can consider to use the zip() function to combine two
+    lists into a list of tuples, or just create your list as a list of tuples directly.
 """

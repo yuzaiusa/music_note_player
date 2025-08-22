@@ -33,3 +33,12 @@ def play_score(stream: pyaudio.Stream, score: str, tempo: int):
 
 if __name__ == "__main__":
     pass  # TODO: implement here
+
+"""
+Tips:
+The focus of this exercercise is to practice built-in string operations and function calls. You can find
+a comprehensive list of string operations in: https://www.w3schools.com/python/python_ref_string.asp
+
+Useful functions for this exercise is split. For the following exercises, you will also need learn to use
+startswith, endswith, strip, join and replace.
+"""
