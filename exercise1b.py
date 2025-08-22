@@ -95,3 +95,46 @@ def play_note(stream: pyaudio.Stream, note: str, length: float, tempo: int, samp
 
 if __name__ == "__main__":
     pass  # TODO: implement here
+
+
+"""
+Tips:
+1. Every name/variable in Python is a reference to an object. It has to be created or defined before it can be used.
+    For example, the function play_frequency is defined by importing it from the helper_functions module.
+    The function piano_note_frequencies is defined in this file, so it can only be used AFTER its definition.
+
+    There are some seemingly contraction to this rule. One is some system variables like __name__ and __main__,
+    or system functions like print() and input(). They are defined by the Python interpreter.
+
+    You will see class methods can be used before their definition in exercise3a. But that is because they are defined
+    in the class body. For now, just remember that you can only use a name/variable after it is defined.
+
+2. Give a name to a long expression so that you can use it easier later. For example, piano_note_frequencies() gives you
+    a dictionary mapping note names to frequencies. You may want to give it a shorter name like freq_map or note_freq_map
+    instead of typing the whole function call every time you need it.
+
+3. The name of a function, for example, piao_note_frequencies, is a reference to the function object. To use it, or
+    call it, you need to use the parentheses () after the name. For example, piano_note_frequencies() calls the function
+    and returns the dictionary mapping note names to frequencies. If you forget the parentheses, you will get the function
+    object itself, not the result of calling it.
+
+4. For a function, the most important thing to know is what parameters it takes and what it returns. Parameters are defined
+    in the function signature (the def statement). Those parameters without "=" after them are required parameters,
+    while those with "=" after them are optional parameters with default values. When you call the function, all the required
+    parameters must be provided, while the optional parameters can be omitted (they will take the default values). When you
+    call the function, you can provide the parameters in the order they are defined, or you can use keyword arguments to
+    specify the parameters by name. For example, play_note(stream, 'C4', 1.0, 120, sample_rate=44100, amplitude=1.0).
+
+5. Some functions don't return anything, they just perform an action. You can just call them without assigning the result to 
+    a variable.  For example, play_frequency(stream, frequency, duration, sample_rate, amplitude) plays a sound but does not 
+    return anything. Some functions return a value, which you better assign to a variable. For example,
+    piano_note_frequencies() returns a dictionary, which you better assign to a variable such as freq_map.
+
+6. You may want to know what type of object a variable is. You can use the built-in function type() to check the type of an object.
+    For example, type(freq_map) will return <class 'dict'> if freq_map is the output of piano_note_frequencies().
+
+7. It is easier for beginners to build their code step by step interactively. Jupyter notebooks are great for this purpose.
+    You can run each cell independently and see the result immediately. You can run the same cell multiple times after modifying it
+    and see how the result changes. You can always print() the variables to see their values. For more advanced users, you can also
+    use a debugger (%debug) to investigate when the code fails.
+"""
