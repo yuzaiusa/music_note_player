@@ -22,26 +22,11 @@ tempo. Then use this function to play the whole song of Twinkle Twinkle Little S
     a quarter note lasts for 1 second, while a tempo of 120 BPM means that a quarter note lasts for 0.5 seconds.
     Figure out the formula to convert length and tempo to duration in seconds, and write it down as a comment in the code.
 
-You also need to be able to play a "rest" note, denoted by 'R'. Think about how to play no sound with the same length as a note. 
-
 Also think about how to write the code in a way that it can be easily modified to play other songs or change the tempo.
 You don't want to write the function to play_note again and again for each note. Think about using loops and data structures
 to make your code more efficient and reusable.
 
 Remember to start the audio stream before playing any notes and stop it after you finish playing all the notes.
-
-(Optional) Bonus: 
-    You may have noticed that the notes you have played are stick together without any pauses. It doesn't
-    sound very musical. You can add a small pause between notes to make it sound more natural. The pause should not make each 
-    note's overall duration longer otherwise you will mess up the tempo. It should be "zeroing out" the tail of the note.
-    The pause could be a fixed value, but it could not be too long, otherwise it will "eat up" some quick notes completely
-    in a fast tempo. An alternative is to make the pause duration proportional to the length of the note. But it could be 
-    too long for a long note. A good compromise is to make the pause duration a small fraction of the note length, 
-    such as 0.1 * length, with a cap on the maximum pause duration, such as 0.5 seconds.
-
-    If you have time, you can implement this in the play_note function as two additional optional parameters:
-    - pause_fraction: a fraction of the note length to use as the pause duration (default 0.1)
-    - max_pause_duration: a maximum duration for the pause (default 0.5 seconds)
 """
 import pyaudio
 from typing import Dict, List, Optional, Union

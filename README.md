@@ -16,6 +16,7 @@ List of exercises:
 1. Play Note: import, dict, list, function
     1. Learn to use library functions to play by frequency
     2. Write a function to play by notes
+    3. Improve the play by notes function to allow rests and add a small pause between notes to make it sound better
 2. Play Score: function, string operation, file operation
     1. Write a function to play a line of "sheet score"
     2. Write a function to play a "sheet score" from a file
