@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 """
 Tips:
-The focus of this exercercise is to practice built-in string operations and function calls. You can find
+The focus of this exercise is to practice built-in string operations and function calls. You can find
 a comprehensive list of string operations in: https://www.w3schools.com/python/python_ref_string.asp
 
 Useful functions for this exercise is split. For the following exercises, you will also need learn to use

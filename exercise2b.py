@@ -37,3 +37,10 @@ def play_score_file(stream: pyaudio.Stream, filename: str):
 
 if __name__ == "__main__":
     pass  # TODO: implement here
+
+"""
+Tips:
+1. It is often a good practice to open a file within a with statement to ensure it is properly closed after reading.
+2. String function strip can be useful to remove any leading or trailing whitespace characters from each line, or even
+    any splitted part of a line when you don't expect any leading or trailing whitespace characters.
+"""
