@@ -1,11 +1,15 @@
 """
 Exercise 1c: Play by Note (Enhanced)
 
-The play_note function from exercise1b can play any 88 piano notes. But it cannot take a rest for now. One of you
-tasks in this exercise is to implement "rest" note, denoted by 'R'. It follows the same format as other notes, e.g.,
+The play_note function from exercise1b can play any 88 piano notes. But it cannot take a rest for now. 
+
+Task number 1: Implement "rest" notes, denoted by 'R'. It follows the same format as other notes, e.g.,
 'R/1.0' means a rest for 1 beat. Think about how to play no sound. There are more than one way to do it.
 
-Task number 2: You may have noticed that the notes you have played are stick together without any pauses. It doesn't
+Task number 2: Give sample_rate and amplitude default values so that they become optional parameters and you
+don't have to specify them every time. Use 44100 for sample_rate and 1.0 for amplitude.
+
+Task number 3: You may have noticed that the notes you have played are stick together without any pauses. It doesn't
 sound very musical. You can add a small pause between notes to make it sound more natural. The pause should not make each 
 note's overall duration longer otherwise you will mess up the tempo. It should be "zeroing out" the tail of the note.
 The pause could be a fixed value, but it could not be too long, otherwise it will "eat up" some quick notes completely
@@ -75,3 +79,8 @@ def play_note(stream: pyaudio.Stream, note: str, length: float, tempo: int, samp
 
 if __name__ == "__main__":
     pass  # TODO: implement here
+
+"""
+1. To play no sound, one option is to simply sleep. But there is another option to play a zero frequency sound (or 
+    a zero amplitude sound).
+"""
