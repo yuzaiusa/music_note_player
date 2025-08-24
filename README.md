@@ -24,11 +24,11 @@ List of exercises:
     1. Write a class to handle the stream and be able to build up a score piece by piece and replay later.
     2. Write a save function and a load function for the class to save/load the scores into/from a json file.
     3. (Optional) Derive a class from the class in the previous exercise to play based on keystrokes.
-4. Play Harmonies (and Different Sounds): class member function, function objects
+4. Transpose to a different key: class member function, function objects
+    1. Implement the transposition by transpose the score
+    2. Implement the transposition by shift the frequency
+5. Play Harmonies (and Different Sounds): class member function, function objects
     1. Deep dive into the play_frequency function to upgrade it into a function that can take two frequencies simultaneously. Also, allow it to use a different wave function to achieve a different sound.
     2. Modify the score format to allow two voices and let the player function to be able to play it.
     3. Modify the class to adopt the upgraded score format.
-5. Transpose to a different key: class member function, function objects
-    1. Implement the transposition by transpose the score
-    2. Implement the transposition by shift the frequency
 6. (Optional): Visualize Real Insturment Sound: pyaudio stream, numpy/pandas, pyplot
