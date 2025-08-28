@@ -15,3 +15,17 @@ add two methods:
 if __name__ == "__main__":
     # TODO: test your class here
     pass
+
+"""
+Tips:
+1. json dump a dict to a str or a file. To dump to a file, use json.dump. To dump to a str, use json.dumps.
+2. json load a dict from a str or a file. To load from a file, use json.load.
+3. json dump and load deals with files opened in text mode. It takes in a file object instead of a file name.
+    So, the typical usage is like:
+    with open(filename, "r") as json_file:
+        json.load(json_file)
+
+    or, to dump:
+    with open(filename, "w") as json_file:
+        json.dump(my_dict_to_be_dumped, json_file)
+"""
