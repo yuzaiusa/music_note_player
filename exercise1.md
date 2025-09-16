@@ -57,7 +57,9 @@ Remember to start the audio stream before playing any notes and stop it after yo
 The Physics behind this function is that the frequency of a note doubles with each octave increase. For example, it is well known that A4 (the A above middle C) is 440 Hz, and A5 (one octave higher) is 880 Hz and A3 (an octave lower) is 220 Hz. Then, each semitone (half step) represents a frequency change by the twelfth root of 2 which is approximately 1.05946.
 
 The piano has 88 keys, ranging from A0 (the lowest note) to C8 (the highest note). The frequency of each note can be calculated using the formula:
-$$f(n) = 27.5 * 2^{\frac{n}{12}}$$
+
+$$ f(n) = 27.5 * 2^{\frac{n}{12}} $$
+
 where $n$ is the number of half steps away from A0. For example, A0 is 0 half steps away from A0, A#0/Bb0 is 1 half step away, B0 is 2 half steps away, C1 is 3 half steps away, and so on.
 
 I try to include both sharp (#) and flat (b) notations for the notes. For example, A#4 and Bb4 both refer to the same pitch (approximately 466.16 Hz).
