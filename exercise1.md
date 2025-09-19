@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 1: Play Note
 
 In exercise, we will focus on basic concepts in python such as **list**, **dict** and **function**.
 

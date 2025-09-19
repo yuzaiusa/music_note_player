@@ -23,12 +23,16 @@ List of exercises:
 3. Adding and removing scores: class, member variable, member method, json, keyboard callback
     1. Write a class to handle the stream and be able to build up a score piece by piece and replay later.
     2. Write a save function and a load function for the class to save/load the scores into/from a json file.
-    3. (Optional) Derive a class from the class in the previous exercise to play based on keystrokes.
-4. Transpose to a different key: class member function, function objects
+4. Transpose to a different key: class inheritance
     1. Implement the transposition by transpose the score
     2. Implement the transposition by shift the frequency
-5. Play Harmonies (and Different Sounds): class member function, function objects
-    1. Deep dive into the play_frequency function to upgrade it into a function that can take two frequencies simultaneously. Also, allow it to use a different wave function to achieve a different sound.
-    2. Modify the score format to allow two voices and let the player function to be able to play it.
-    3. Modify the class to adopt the upgraded score format.
-6. (Optional): Visualize Real Insturment Sound: pyaudio stream, numpy/pandas, pyplot
+5. Play Harmonies (and Different Sounds): function objects, class inheritance
+    1. Deep dive into the play_frequency function to upgrade it into a function that can take two frequencies simultaneously, name the function play_frequencies.
+    2. Allow the new play_frequencies function to use a different wave function to achieve a different sound.
+    3. Modify the score format to allow two voices and let the player function to be able to play it.
+    4. Modify the class to adopt the upgraded score format.
+6. Visualize Real Insturment Sound: wave, numpy/pandas, pyplot
+    1. Visualize the sine_wave and box_wave that was made in exercise 5b
+    2. Use wave to load a sample piano note. Visualize its wave.
+    3. Based on the sound you recorded, manipulate their frequencies to make the sound in a different pitch
+    4. Make your music player to use this naive instrument sound
