@@ -3,8 +3,6 @@
 In this exercise, we will focus on function, string operation and file operation.
 
 ## Exercise 2a Play a score line
-
-### Task 2.a
 You have managed to play some notes in Exercise 1. Now, let's build on that to play a "sheet music" score.
 
 Our simplied sheet music is a string that contains note names, their lengths, and the tempo. 
@@ -20,6 +18,7 @@ For example, the first measure of Twinkle Twinkle Little Star in C major can be 
     C4/1.0,C4/1.0,G4/1.0,G4/1.0,A4/1.0,A4/1.0,G4/2.0
 ```
 
+### Task 2.a
 Your task is to implement a function `play_score` that takes a PyAudio stream, a string representing the score, and a tempo in beats per minute (BPM). The function should parse the score string (hint: use the `split` function), convert it into note-length pairs, and then use the `play_note` function from exercise1b to play.
 
 Remember to start the audio stream before playing any notes and stop it after you finish playing all the notes.
@@ -30,10 +29,9 @@ The focus of this exercise is to practice built-in string operations and functio
 Useful functions for this exercise is split. For the following exercises, you will also need learn to use startswith, endswith, strip, join and replace.
 
 ## Exercise 2b Play a score sheet file
-
-### Task 2.b
 In **excercise 2a**, you implemented a function to play a line of sheet music given as a string.  Now, let's build on that to play the whole song by taking the score from a text file.
 
+### Task 2.b
 Your task is to implement a function `play_score_file` that takes a PyAudio stream and a filename.  The function should read the score from the file, parse it into a string that can be passed to the `play_score` function from **exercise2a**.
 
 The format of the score file is as follows:
